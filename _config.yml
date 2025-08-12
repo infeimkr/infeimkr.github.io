@@ -1,18 +1,17 @@
 # Site settings
-title: Daktilo
+title: InFeIM's Step-up
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  대 AI 시대에 '충분한 난폭함이 있기에, 내 삶을 시련으로 만들리라' 라는 좌우명으로 도전해봅니다.
+  과연 이 도전의 끝에 무엇이 있을지...
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hitchhiker.ma" # the base hostname & protocol for your site
+baseurl: "https://infeimkr.github.io/" # the subpath of your site, e.g. /blog/
+url: "https://infeimkr.github.io/" # the base hostname & protocol for your site
 
 author:
-  fullname: Motaquillah Maddane
+  fullname: Lim InCheol
   googleplus: https://www.google.com/+MotaquillahMaddane
-  github: kronik3r
-  twitter: electrik_frog
+  github: infeimkr
+  twitter: @InFeIM
   # disqus: your_disqus_forum_shortname
 
 # google_analytics: 'UA-XXXXXXXX-X'
