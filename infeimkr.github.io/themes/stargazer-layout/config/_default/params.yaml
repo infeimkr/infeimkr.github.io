@@ -1,0 +1,73 @@
+keywords: ""
+useCanonify: True
+
+images:
+  - "stargazer-layout/card.png"
+
+# Achtung, kein richtiges logging interface mit setting.loglevel > msg.loglevel etc.
+show_infos: 
+  error: True
+  warning: True
+  info: True
+  debug: False
+
+
+regex_folders: 
+    stargazer_layout:
+      vendor: 
+        js: 
+          - "vendorlibs/**/dist/**/*.min.js" #this is the one which is mounted in assets 
+        css: 
+          - "vendorlibs/**/dist/**/*.min.css"
+      custom: 
+        auto_scan_scripts: True # check js,ts, ; TODO to develop
+        auto_scan_style: True  # check scss,css
+        css:
+          - "css/*.css"
+          - "scss/main.scss"
+        js:
+          - "ts/*.ts"
+          - "js/*.js"
+
+brand: 
+  logo:
+    src: "images/logo/stargazer/stargazer_layout_big.png"
+    alt: "brand_logo"
+  title: Demo-Manier
+
+
+disabled:
+  sections: 
+      - testing
+      - _index
+
+credits: true
+themeColor: '#44d8f1'
+
+stargazer_layout:
+  lorem: 'ABC'
+  demo: 
+    beer: true
+    branding: true
+    beercss: 
+      page: https://www.beercss.com
+      logo: https://www.beercss.com/favicon.png
+      title: 
+        company: BeerCSS
+    gohugo: 
+      page: https://gohugo.io/
+      logo: https://gohugo.io/favicon-32x32.png
+      title: 
+        company: HUGO
+    oldschoolmanier:
+      page: https://oldschoolmanier.de
+      logo: https://oldschoolmanier.de/fav.png
+      title:
+        user: Blackeye
+        company: Oldschoolmanier
+    material:
+      title: 
+        company: material 3
+      page: https://m3.material.io/
+
+  

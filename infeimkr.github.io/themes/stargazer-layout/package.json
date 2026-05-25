@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "hugo --source exampleSite serve -D -p 5004 --disableFastRender --gc --noHTTPCache --printI18nWarnings",
+    "clean": "[[ -d exampleSite/public ]] && rm -R exampleSite/public; [[ -d exampleSite/resources ]] && rm -R exampleSite/resources",
+    "prod": "hugo serve --source exampleSite -D -p 5004 --disableFastRender --gc  --environment production --noHTTPCache",
+    "build": "hugo",
+    "build:draft": "hugo -D"
+  },
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "beercss": "^3.9.1"
+  },
+  "devDependencies": {
+    "html-lint": "^2.4.2",
+    "prettier": "^3.4.2",
+    "prettier-plugin-go-template": "^0.0.15"
+  },
+  "name": "demo_site_stargazer",
+  "version": "0.1.0"
+}

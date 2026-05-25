@@ -1,0 +1,4 @@
+baseURL = 'https://infeimkr.github.io/'
+locale = 'ko-KR'
+title = 'Spending Time - InFeIM'
+theme = 'stargazer-layout'

@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "components/header/toggle_theme.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+{{/*  row scroll  */}}
+  <div class="">
+    {{/*  {{ range .Pages }}
+              {{ .Render "views/card_view" }}
+              {{ end }}  */}}
+              {{ partial "components/list_presentation/default.html" .Paginator.Pages }}
+              {{ $format := "terse"}}
+              {{ partial "pagination/default.html" (dict "page" . "menu" true "format" $format) }}
+  </div>
+  
+  
+{{ end }}
+
+{{ define "aside-content" }}
+  {{ partial "components/related/list" . }}
+{{ end }}
+
+
