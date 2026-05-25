@@ -5,7 +5,7 @@
 {{- range .menuEntries }}
   <li>
     {{ if .HasChildren }}
-      {{- partial "partials/nav_nested_fragment.html" (dict "page" $page "fragment" .) }}
+      {{- partial "nav_nested_fragment.html" (dict "page" $page "fragment" .) }}
     {{ else }}
       <a
         {{ partial "fragment_no_children.html" (dict "page" $page "fragment" .)  | safeHTMLAttr }}
@@ -13,7 +13,7 @@
         {{ with .Pre }}  
                 {{- . -}}
         {{ end }}
-        <span>{{- partial "partials/get_name.html" . -}}</span>
+        <span>{{- partial "get_name.html" . -}}</span>
 
       </a>
     {{ end }}
@@ -21,7 +21,7 @@
 {{ end }}
 
 {{/*  if the navbar has no children  */}}
-{{ define "partials/fragment_no_children.html" }}
+{{ define "fragment_no_children.html" }}
   {{- $page := .page }}
   {{ with .fragment }}
     {{- $attrs := dict "href" .URL }}
@@ -33,7 +33,7 @@
 {{ end }}
 
 {{/*  if the navbar has children  */}}
-{{ define "partials/nav_nested_fragment.html" }}
+{{ define "nav_nested_fragment.html" }}
   {{- $page := .page }}
   {{ with .fragment }}
         <details open>
@@ -48,7 +48,7 @@
             {{ with .Pre }}  
                 {{- . -}}
             {{ end }}
-            <span>{{- partial "partials/get_name.html" . -}}</span>
+            <span>{{- partial "get_name.html" . -}}</span>
             </div>
         </summary>
         {{ with .Children }}
@@ -63,7 +63,7 @@
 
 
 {{/*  util function  */}}
-{{ define "partials/get_name.html" }}
+{{ define "get_name.html" }}
   {{- $name := .Name }}
   {{- with .Identifier }}
     {{- with T . }}
