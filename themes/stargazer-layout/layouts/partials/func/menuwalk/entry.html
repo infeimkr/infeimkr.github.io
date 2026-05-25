@@ -8,7 +8,7 @@
       {{- partial "partials/nav_nested_fragment.html" (dict "page" $page "fragment" .) }}
     {{ else }}
       <a
-        {{ partial "partials/fragment_no_children.html" (dict "page" $page "fragment" .)  | safeHTMLAttr }}
+        {{ partial "fragment_no_children.html" (dict "page" $page "fragment" .)  | safeHTMLAttr }}
         >
         {{ with .Pre }}  
                 {{- . -}}
