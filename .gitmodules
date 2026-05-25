@@ -1,3 +1,3 @@
-[submodule "themes/stargazer-layout"]
-	path = themes/stargazer-layout
-	url = https://github.com/Blackstareye/stargazer-layout
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod

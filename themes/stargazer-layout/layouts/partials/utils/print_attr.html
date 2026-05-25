@@ -1,5 +1,0 @@
-{{- range $k, $v := . }}
-    {{- with $v }}
-      {{- printf " %s=%q" $k $v | safeHTML }}
-    {{- end }}
-  {{- end -}}

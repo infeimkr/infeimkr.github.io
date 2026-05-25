@@ -1,6 +1,0 @@
-# https://gohugo.io/getting-started/configuration/
-# _merge: shallow 
-title: "🌠 [DEMO] Stargazer Layout"
-params:
-  images:
-    - "card.png"

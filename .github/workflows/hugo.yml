@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: ["main"] # 기본 브랜치가 master인 경우 "master"로 변경
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -21,18 +21,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive # 테마(서브모듈)를 가져오기 위해 필수
+          submodules: recursive
           fetch-depth: 0
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Theme Dependencies
-        run: |
-          cd themes/stargazer-layout
-          npm install
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

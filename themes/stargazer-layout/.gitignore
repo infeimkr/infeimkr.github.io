@@ -1,8 +1,0 @@
-Makefile
-node_modules/
-public/
-resources/
-exampleSite/public/
-exampleSite/resources/
-_tmp/
-scripts/config.sh

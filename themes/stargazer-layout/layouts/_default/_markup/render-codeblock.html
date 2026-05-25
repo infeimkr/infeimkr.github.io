@@ -1,9 +1,0 @@
-{{/*  {{ $classid := (printf "code-%s" (math.Rand | hash.XxHash) )}}  */}}
-{{ $opts := dict "lineNos" true "style" "catppuccin-frappe" "anchorLineNos" true "wrapperClass" "strcodeblock"}}
-{{ $result := transform.HighlightCodeBlock . $opts }}
-<div>
-    {{ $result.Wrapped }}
-    <button class="transparent absolute top right str-copycode">
-        <i>content_copy</i>
-    </button>
-</div>
